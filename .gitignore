@@ -16,10 +16,27 @@ backend/public/storage
 
 # OS
 .DS_Store
+# Frontend
+frontend/node_modules
+frontend/dist
+
+# Backend
+backend/vendor
+backend/node_modules
+
+# Laravel
+backend/.env
+backend/storage/*.key
+backend/public/storage
+
+# VS Code
+.vscode
+
+# OS
+.DS_Store
 Thumbs.db
 # Enterprise AI
 enterprise-ai/venv
 enterprise-ai/.venv
 enterprise-ai/__pycache__
 enterprise-ai/database/chroma_db
-*.csv
