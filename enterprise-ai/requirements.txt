@@ -13,3 +13,4 @@ numpy>=1.24.0
 scikit-learn
 pymysql
 cryptography
+langchain-groq
