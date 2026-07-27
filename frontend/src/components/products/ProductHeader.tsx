@@ -1,4 +1,4 @@
-interface ProductHeaderProps {
+﻿interface ProductHeaderProps {
   onAdd?: () => void;
 }
 
@@ -13,7 +13,7 @@ export function ProductHeader({
         </h1>
 
         <p className="text-sm text-gray-500">
-          Kelola seluruh produk Nikky Frozen
+          Kelola seluruh produk Nikky Superstore
         </p>
       </div>
 

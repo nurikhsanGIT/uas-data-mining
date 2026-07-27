@@ -1,4 +1,4 @@
-// src/components/ui/Logo.tsx
+﻿// src/components/ui/Logo.tsx
 
 import { Snowflake } from "lucide-react";
 import { cn } from "../../lib/cn";
@@ -43,7 +43,7 @@ export function Logo({
               : "text-2xl"
           )}
         >
-          Nikky Frozen
+          Nikky Superstore
         </div>
 
         {size === "lg" && (

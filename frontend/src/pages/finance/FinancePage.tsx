@@ -504,7 +504,7 @@ export function FinancePage() {
                   <div className="space-y-2">
                     <h4 className="text-xl font-black tracking-tight">Panduan Sesi Shift</h4>
                     <p className="text-xs text-slate-400 leading-relaxed">
-                      Sistem operasional kasir Nikky Frozen dirancang dengan 2 shift mandiri untuk memastikan keakuratan kas masuk.
+                      Sistem operasional kasir Nikky Superstore dirancang dengan 2 shift mandiri untuk memastikan keakuratan kas masuk.
                     </p>
                   </div>
 
@@ -531,3 +531,4 @@ export function FinancePage() {
     </div>
   );
 }
+

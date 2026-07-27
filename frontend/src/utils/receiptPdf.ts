@@ -1,4 +1,4 @@
-import jsPDF from "jspdf";
+﻿import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
 
 export const generateReceiptPDF = (sale: any) => {
@@ -7,7 +7,7 @@ export const generateReceiptPDF = (sale: any) => {
   // HEADER
   doc.setFontSize(20);
   doc.setFont("helvetica", "bold");
-  doc.text("NIKKY FROZEN", 105, 20, {
+  doc.text("Nikky Superstore", 105, 20, {
     align: "center",
   });
 
@@ -92,9 +92,10 @@ export const generateReceiptPDF = (sale: any) => {
     align: "center",
   });
 
-  doc.text("Nikky Frozen POS System", 105, finalY + 27, {
+  doc.text("Nikky Superstore POS System", 105, finalY + 27, {
     align: "center",
   });
 
   doc.save(`${sale.invoice_number}.pdf`);
 };
+

@@ -1,4 +1,4 @@
-import { api } from "../../lib/api";
+﻿import { api } from "../../lib/api";
 import { useMemo, useState } from "react";
 import Swal from "sweetalert2";
 import {
@@ -163,7 +163,7 @@ export default function Login({ onLogin }: LoginProps) {
       ? "Masukkan email akun untuk membuat link reset password"
       : mode === "reset"
         ? "Buat password baru untuk akun Anda"
-        : "Masuk ke sistem POS Nikky Frozen";
+        : "Masuk ke sistem POS Nikky Superstore";
 
   return (
     <div className="min-h-screen grid lg:grid-cols-2">
@@ -182,7 +182,7 @@ export default function Login({ onLogin }: LoginProps) {
             </div>
 
             <div>
-              <h1 className="text-5xl font-bold">Nikky Frozen</h1>
+              <h1 className="text-5xl font-bold">Nikky Superstore</h1>
               <p className="text-blue-100 text-xl">Point of Sale System</p>
             </div>
           </div>
@@ -226,7 +226,7 @@ export default function Login({ onLogin }: LoginProps) {
           </div>
 
           <p className="mt-12 text-blue-200 text-sm">
-            Copyright 2026 Nikky Frozen. All rights reserved.
+            Copyright 2026 Nikky Superstore. All rights reserved.
           </p>
         </div>
       </div>
@@ -295,7 +295,7 @@ export default function Login({ onLogin }: LoginProps) {
                   type={showPassword ? "text" : "password"}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  placeholder={mode === "reset" ? "Minimal 6 karakter" : "••••••••"}
+                  placeholder={mode === "reset" ? "Minimal 6 karakter" : "â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"}
                   className="w-full h-14 pl-12 pr-12 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
 
@@ -360,12 +360,12 @@ export default function Login({ onLogin }: LoginProps) {
             <p className="text-center text-sm text-slate-400 mt-6">
               Dengan masuk, Anda menyetujui
               <span className="text-blue-600"> Syarat & Ketentuan </span>
-              Nikky Frozen
+              Nikky Superstore
             </p>
           )}
 
           <p className="text-center text-sm text-slate-400 mt-8">
-            Nikky Frozen POS v2.4.1 - Copyright 2026
+            Nikky Superstore POS v2.4.1 - Copyright 2026
           </p>
         </div>
       </div>

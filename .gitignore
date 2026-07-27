@@ -17,3 +17,9 @@ backend/public/storage
 # OS
 .DS_Store
 Thumbs.db
+# Enterprise AI
+enterprise-ai/venv
+enterprise-ai/.venv
+enterprise-ai/__pycache__
+enterprise-ai/database/chroma_db
+*.csv

@@ -19,7 +19,7 @@ class AuthController extends Controller
         $validated = $request->validate([
             'email' => 'required|email',
             'password' => 'required',
-            'role' => 'required|in:owner,kasir,admin_gudang,admin_keuangan',
+            'role' => 'nullable|in:owner,kasir,admin_gudang,admin_keuangan',
         ]);
 
         $credentials = [
@@ -36,7 +36,7 @@ class AuthController extends Controller
 
         $user = Auth::user();
 
-        if ($user->role !== $validated['role']) {
+        if (isset($validated['role']) && $user->role !== $validated['role']) {
             Auth::logout();
 
             return response()->json([

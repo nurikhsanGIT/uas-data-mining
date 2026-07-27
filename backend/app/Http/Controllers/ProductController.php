@@ -25,18 +25,27 @@ class ProductController extends Controller
             });
         }
 
-        return $query->get();
+        $products = $query->get()->map(function($p){
+    $p->image_url = $p->image ? asset('storage/'.$p->image) : null;
+    return $p;
+});
+return $products;
     }
 
     public function expiring()
     {
-        return Product::query()
+        $products = Product::query()
             ->select('id', 'sku', 'name', 'image', 'expiry')
             ->whereNotNull('expiry')
             ->whereDate('expiry', '<=', now()->addDays(7))
             ->orderBy('expiry')
             ->limit(20)
-            ->get();
+            ->get()
+            ->map(function($p){
+                $p->image_url = $p->image ? asset('storage/'.$p->image) : null;
+                return $p;
+            });
+        return $products;
     }
 
     public function store(Request $request)
